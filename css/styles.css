@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    border: 1px solid;
+    /* border: 1px solid; */
 }
 
 /* ------
@@ -21,7 +21,9 @@ body {
 }
 
 .wrapper {
+    height: 100%;
     display: grid;
+    grid-template-rows: 70px;
     grid-template-areas:
     "header"
     "nav"
@@ -33,7 +35,7 @@ Headings
 ------ */
 
 h1 {
-
+    flex-grow: 4;
 }
 
 h2 {
@@ -48,8 +50,13 @@ h3 {
 header area
 ------ */
 header {
+    display: flex;
     grid-area: header;
     background-color:#aaa;
+    align-content: flex-start;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 10px;
 }
 
 .bell  {
@@ -61,8 +68,14 @@ header {
     transform: rotate(-15deg);
 }
 
+.profile-img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
 /* ------
-Navivation
+Navigation
 ------ */
 
 nav {
@@ -73,16 +86,16 @@ nav {
 }
 
 .nav-icons {
-    display: inline;
+    display: inline-block;
     height: 50px;
     width: 50px;
     padding: 6px;
-
 }
 
-a {
-    border: none;
+.nav-icons:hover {
+    transform: scale(1.1);
 }
+
 
 /* ------
 Dashboard and alert
@@ -115,7 +128,7 @@ media-queries
 
 @media (min-width: 768px) {
     .wrapper {
-        grid-template-columns: 100px 1fr;
+        grid-template-columns: 70px 1fr;
         grid-template-areas:
         "header header"
         "nav main"
