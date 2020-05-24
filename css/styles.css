@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    border: 1px solid;
+}
+
+/* ------
+clearfix
+------ */
+.clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
+}
+
+/* ------
+global
+------ */
+body {
+    font-family: 'Josefin Sans', Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-areas:
+    "header"
+    "nav"
+    "main";
+}
+
+/* ------
+Headings
+------ */
+
+h1 {
+
+}
+
+h2 {
+
+}
+
+h3 {
+
+}
+
+/* ------
+header area
+------ */
+header {
+    grid-area: header;
+}
+
+.bell  {
+    height: 30px;
+    width: 30px;
+}
+
+.bell:hover {
+    transform: rotate(-15deg);
+}
+
+/* ------
+Dashboard and alert
+------ */
+
+/* ------
+graphs
+------ */
+
+/* ------
+members and activity
+------ */
+
+/* ------
+Forms
+------ */
+
+/* ------
+Settings
+------ */
+
+/* ------
+media-queries
+------ */
+
+@media (min-width: 768px) {
+
+}
+
+@media (min-width: 1024px) {
+
+}

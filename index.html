@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,200,300,regular,500,600,700,100italic,200italic,300italic,italic,500italic,600italic,700italic" rel="stylesheet" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="wrapper">
+
+        <header>
+            <h1>MyApp</h1>
+            <div class="bell">
+                <!-- bell icon -->
+                <svg class="bell" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 32 32" style="enable-background:new 0 0 32 32;" xml:space="preserve">
+                <style type="text/css">
+                    .st0{fill:#FFFFFF;}
+                </style>
+                <g id="_x36__6_">
+                    <g>
+                        <path class="st0" d="M24,18v-8c0-5.5-4.5-10-10-10S4,4.5,4,10v8l-4,8h9.1c0.5,2.3,2.5,4,4.9,4s4.4-1.7,4.9-4H28L24,18z M14,28
+                            c-1.3,0-2.4-0.8-2.8-2h5.6C16.4,27.2,15.3,28,14,28z M3,24l3-6v-8c0-4.4,3.6-8,8-8s8,3.6,8,8v8l3,6H3z"/>
+                    </g>
+                </g>
+                </svg>
+            </div>  <!-- end bell div-->
+            <img src="images/meg.jpg"> <!-- need to make round-->
+            <h2>Persons Name</h2>
+        </header>
+
+        <nav>
+            <a><img></a>
+            <a><img></a>
+            <a><img></a>
+            <a><img></a>
+        </nav>
+
+        <main>
+            <div class="main-header"><!-- Dashboard and search-->
+                <h2>Dashboard</h2>
+                <div class="search">
+                    <input type="search" placeholder="Search"/>
+                </div>
+            </div><!-- End Dashboard and search-->
+            <div class="alert" id="alert"><!-- Alert with js-->
+
+            </div><!-- End Alert with js-->
+            <section class="traffic"> <!-- Top main graph-->
+                <div class="traffic-header">
+                    <h3>Traffic</h3>
+                    <ul>
+                        <li>Hourly</li>
+                        <li>Daily</li>
+                        <li>Weekly</li>
+                        <li>Monthly</li>
+                    </ul>
+                </div>
+                <div class="widget-container-full">
+                    <canvas id="traffic-chart"></canvas>
+                </div>
+            </section><!-- EndTop main graph-->
+            <section class="daily-traffic"> <!-- small bar graph-->
+                <h3>Daily Traffic</h3>
+                <div class="widget-container-half">
+                    <canvas id="daily-chart"></canvas>
+                </div>
+            </section> <!-- end small bar graph-->
+            <section class="mobile-users"> <!-- doughnut graph-->
+                <h3>Mobile Users</h3>
+                <div class="widget-container-half">
+                    <canvas id="mobile-chart"></canvas>
+                </div>
+            </section> <!-- end doughnut graph-->
+            <section class="social"> <!-- Social media - 3 columns -->
+                <div class="twitter">
+                    <div class="social-img"></div> <!-- inline svg-->
+                    <div class="social-text"></div>
+                </div>
+                <div class="facebook">
+                    <div class="social-img"></div> <!-- inline svg-->
+                    <div class="social-text"></div>
+                </div>
+                <div class="google">
+                    <div class="social-img"></div> <!-- inline svg-->
+                    <div class="social-text"></div>
+                </div>
+            </section> <!-- end Social media - 3 columns -->
+            <section class="new-members"><!-- new members sep divs-->
+                <h3>New Members</h3>
+                <div class="member-contain">
+                    <img>
+                    <div class="member-text"></div>
+                    <p>dob</p>
+                </div>
+            </section> <!-- end new new members sep divs-->
+            <section class="recent-activity"><!-- recent activity sep divs-->
+                <h3>New Members</h3>
+                <div class="recent-contain">
+                    <img>
+                    <div class="recent-text"></div>
+                    <img arrow>
+                 </div>
+            </section><!-- end recent activity sep divs-->
+            <section class="message-user"><!-- user message form-->
+                <h3>Message User</h3>
+                <form>
+                    <input>
+                    <textarea></textarea>
+                    <button>Send</button>
+                </form>
+            </section><!-- end user message form-->
+            <section class="setting"><!-- toggle buttons and select field-->
+                <h3>Settings</h3>
+                <div>Toggle buttons</div>
+                <div>Toggle buttons</div>
+                <select></select>
+                <button>Save</button>
+                <button>Cancel</button>
+            </section><!-- end toggle buttons and select field-->
+        </main>
+    </div>
+
+</body>
+</html>
