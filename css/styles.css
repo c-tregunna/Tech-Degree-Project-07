@@ -49,6 +49,7 @@ header area
 ------ */
 header {
     grid-area: header;
+    background-color:#aaa;
 }
 
 .bell  {
@@ -61,12 +62,40 @@ header {
 }
 
 /* ------
+Navivation
+------ */
+
+nav {
+    grid-area: nav;
+    background-color: #888;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-icons {
+    display: inline;
+    height: 50px;
+    width: 50px;
+    padding: 6px;
+
+}
+
+a {
+    border: none;
+}
+
+/* ------
 Dashboard and alert
 ------ */
 
 /* ------
 graphs
 ------ */
+
+main {
+    grid-area: main;
+    background-color:#ddd;
+}
 
 /* ------
 members and activity
@@ -85,9 +114,82 @@ media-queries
 ------ */
 
 @media (min-width: 768px) {
+    .wrapper {
+        grid-template-columns: 100px 1fr;
+        grid-template-areas:
+        "header header"
+        "nav main"
+        "nav main";
+    }
 
+    nav {
+        display: block;
+    }
+
+    .nav-icons {
+        display: block;
+        height: 50px;
+        width: 50px;
+        margin: 30px auto;
+
+    }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1024px) { /*can this be done at 768px? */
+    main {
+        display: grid;
+        grid-template-columns:1fr 1fr;
+        grid-template-areas:
+        "main-header main-header"
+        "alert alert"
+        "traffic traffic"
+        "daily mobile"
+        "social social"
+        "new recent"
+        "message settings";
+    }
 
+    .main-header {
+        grid-area: main-header;
+    }
+
+    .alert {
+        grid-area: alert;
+    }
+
+    .traffic {
+        grid-area: traffic;
+    }
+
+    .daily-traffic {
+        grid-area: daily;
+    }
+
+    .mobile-users {
+        grid-area: mobile;
+    }
+
+    .daily-traffic {
+        grid-area: daily;
+    }
+
+    .social {
+        grid-area: social;
+    }
+
+    .new-members {
+        grid-area: new;
+    }
+
+    .recent-activity {
+        grid-area: recent;
+    }
+
+    .message-user {
+        grid-area: message;
+    }
+
+    .settings {
+        grid-area: settings;
+    }
 }
