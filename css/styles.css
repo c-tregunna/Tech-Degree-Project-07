@@ -46,6 +46,7 @@ h1 .title {
 
 h2.top-name {
     font-size: 1em;
+    font-weight: 400;;
 }
 
 h3 {
@@ -133,6 +134,8 @@ input {
     width: 80%;
     border-radius: 5px;
     margin-top: 12px;
+    border: 1px solid #ddd;
+    padding-left: 4px;
 }
 
 .alert {
@@ -147,6 +150,10 @@ span.alert-span {
     font-weight: bold;
 }
 
+.cross {
+
+}
+
 /* ------
 graphs
 ------ */
@@ -154,6 +161,10 @@ graphs
 main {
     grid-area: main;
     background-color:#fff;
+}
+
+ul {
+
 }
 
 /* ------
