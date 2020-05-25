@@ -38,8 +38,14 @@ h1 {
     flex-grow: 4;
 }
 
-h2 {
+h1 span {
+    font-weight: 200;
+}
 
+h2.top-name {
+    font-size: 1em;
+    font-weight: 400;
+    margin-left: 6px;
 }
 
 h3 {
@@ -52,16 +58,19 @@ header area
 header {
     display: flex;
     grid-area: header;
-    background-color:#aaa;
+    background-color: #88D884;
     align-content: flex-start;
     justify-content: flex-end;
     align-items: center;
-    padding: 10px;
+    padding: 10px 20px;
 }
+
+
 
 .bell  {
     height: 30px;
     width: 30px;
+    margin-right: 40px;
 }
 
 .bell:hover {
@@ -72,6 +81,7 @@ header {
     height: 50px;
     width: 50px;
     border-radius: 50%;
+    box-shadow: 2px 2px 2px #444;
 }
 
 /* ------
@@ -80,9 +90,9 @@ Navigation
 
 nav {
     grid-area: nav;
-    background-color: #888;
+    background-color: rgb(24, 59, 22);
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .nav-icons {
@@ -96,6 +106,15 @@ nav {
     transform: scale(1.1);
 }
 
+.nav a {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    margin: 0 0 10px;
+    padding: 10px 0;
+}
+
 
 /* ------
 Dashboard and alert
@@ -107,7 +126,7 @@ graphs
 
 main {
     grid-area: main;
-    background-color:#ddd;
+    background-color:#fff;
 }
 
 /* ------
@@ -206,3 +225,19 @@ media-queries
         grid-area: settings;
     }
 }
+
+
+/* ------
+Colours
+------ */
+.color-primary-0 { color: #8181C1 }	/* Main Primary color */
+.color-primary-1 { color: #CBCBE2 }
+.color-primary-2 { color: #BFBFDC }
+.color-primary-3 { color: #5353AA }
+.color-primary-4 { color: #4B4BA4 }
+
+.color-secondary-1-0 { color: #88D884 }	/* Main Secondary color (1) */
+.color-secondary-1-1 { color: #D1EDD0 }
+.color-secondary-1-2 { color: #C7E9C5 }
+.color-secondary-1-3 { color: #54C54E }
+.color-secondary-1-4 { color: rgb(24, 59, 22) }
