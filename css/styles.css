@@ -15,157 +15,81 @@ clearfix
 /* ------
 global
 ------ */
+
 body {
     font-family: 'Josefin Sans', Helvetica, sans-serif;
     font-size: 1em;
 }
 
-.wrapper {
-    height: 100%;
+.grid-container {
     display: grid;
-    grid-template-rows: 100px 100px 1fr;
+    height: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px 80px 1fr;
     grid-template-areas:
     "header"
     "nav"
     "main";
 }
 
-/* ------
-Headings
------- */
-
-h1 {
-    font-size: 1.5em;
-    width: 100%;
-    text-align: center;
-}
-
-h1 .title {
-    font-weight: 200;;
-}
-
-h2.top-name {
-    font-size: 1em;
-    font-weight: 400;;
-}
-
-h3 {
-
-}
-
-/* ------
-header area
------- */
-
 header {
     grid-area: header;
-    background-color: #BFBFDC;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
 }
 
-.bell {
-    width: 60px;
-    border-right: 2px solid #CBCBEf;
-    margin-right: 20px;
-    margin-bottom: 10px;
+nav {
+    grid-area: nav;
 }
 
-.bell .bell-icon  {
-    height: 30px;
-    width: 30px;
+main {
+    grid-area: main;
+    display: grid;
+    grid-gap: 2px;
+
 }
 
-.bell .bell-icon:hover  {
-    transform: rotate(-15deg);
+.half-size-charts,
+.social-media-info,
+.member-info,
+.message-and-settings {
+   display: grid;
+   grid-gap: 2px;
 }
 
-.profile-img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    margin-right: 10px;
-    margin-bottom: 10px;
+.half-size-charts,
+.member-info,
+.message-and-settings {
+   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 }
+
+.social-media-info {
+    grid-template-columns: repeat(3, 1fr);
+ }
+
+ /* ------
+header area
+------ */
 
 /* ------
 Navigation
 ------ */
-
 nav {
-    grid-area: nav;
-    background-color: #8181C1;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
-
 }
-
-.nav-icons {
-    height: 30px;
-    width: 30px;
-    opacity: .4;
-    transition: opacity .5s ease-out;
-}
-
-.nav-icons:hover {
-    opacity: 1;
+ .nav-icons {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
 }
 
 /* ------
 Dashboard and alert
 ------ */
-.main-header {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    text-align: center;
-}
-
-.search {
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;;
-    background-color: #eee;
-}
-
-input {
-    height: 30px;
-    width: 80%;
-    border-radius: 5px;
-    margin-top: 12px;
-    border: 1px solid #ddd;
-    padding-left: 4px;
-}
-
-.alert {
-    width: 95%;
-    background-color: #BFBFDC;
-    border-radius: 5px;
-    margin: 10px auto;
-    padding: 10px;
-}
-
-span.alert-span {
-    font-weight: bold;
-}
-
-.cross {
-
-}
 
 /* ------
 graphs
 ------ */
-
-main {
-    grid-area: main;
-    background-color:#fff;
-}
-
-ul {
-
-}
 
 /* ------
 members and activity
@@ -183,117 +107,26 @@ Settings
 media-queries
 ------ */
 
-/* @media (min-width: 768px) {
-    .wrapper {
-        grid-template-columns: 70px 1fr;
+ @media (min-width: 768px) {
+     .grid-container {
+        grid-template-rows: 70px 80px 1fr;
+
+     }
+}
+
+@media (min-width: 1024px) {
+    .grid-container {
+        grid-template-columns: 80px 1fr;
+        grid-template-rows: 70px 1fr;
         grid-template-areas:
         "header header"
-        "nav main"
         "nav main";
-    }
+     }
 
-    header {
-        flex-wrap: nowrap;
-    }
+     nav {
+         flex-direction: column;
+     }
 
-    nav {
-        display: block;
-        height: 100vh;
-        padding-top: 70px;
-        position: fixed;
-        top: 0px;
-        width: auto;
-    }
-
-    .nav-icons {
-        display: block;
-        height: 50px;
-        width: 50px;
-        margin: 30px auto;
-
-    }
-
-    h1 {
-        font-size: 3em;
-    }
-
-    h2.top-name {
-        font-size: 1.75em;
-        font-weight: 400;
-        margin-left: 16px;
-    }
-
-    .bell {
-        height: 30px;
-        width: 30px;
-    }
-
-    .profile-img {
-        height: 40px;
-        width: 40px;
-    }
-
-    .search {
-    border-bottom: 1px solid #666;
-    border-left: 1px solid #666;
 }
-} */
 
-/* @media (min-width: 1024px) { /*can this be done at 768px?
-    main {
-        display: grid;
-        grid-template-columns:1fr 1fr;
-        grid-template-areas:
-        "main-header main-header"
-        "alert alert"
-        "traffic traffic"
-        "daily mobile"
-        "social social"
-        "new recent"
-        "message settings";
-    }
 
-    .main-header {
-        grid-area: main-header;
-    }
-
-    .alert {
-        grid-area: alert;
-    }
-
-    .traffic {
-        grid-area: traffic;
-    }
-
-    .daily-traffic {
-        grid-area: daily;
-    }
-
-    .mobile-users {
-        grid-area: mobile;
-    }
-
-    .daily-traffic {
-        grid-area: daily;
-    }
-
-    .social {
-        grid-area: social;
-    }
-
-    .new-members {
-        grid-area: new;
-    }
-
-    .recent-activity {
-        grid-area: recent;
-    }
-
-    .message-user {
-        grid-area: message;
-    }
-
-    .settings {
-        grid-area: settings;
-    }
-} */

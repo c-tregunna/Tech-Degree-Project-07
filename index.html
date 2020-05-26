@@ -6,116 +6,41 @@
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,200,300,regular,500,600,700,100italic,200italic,300italic,italic,500italic,600italic,700italic" rel="stylesheet" />
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/colors.css">
     <title>Awesome App</title>
 </head>
 <body>
 
-    <div class="wrapper">
-
-        <header>
-            <h1>Awesome<span class="title">App&trade;</span></h1>
-            <div class="bell">
-                <!-- bell icon -->
-                <img src="icons/icon-bell.svg" alt="bell icon" class="bell-icon">
-            </div>  <!-- end bell div-->
-            <img src="images/meg.jpg" class="profile-img"> <!-- need to make round-->
-            <h2 class="top-name">Claire Tregunna</h2>
-        </header>
-
-        <nav>
+    <div class="grid-container">
+		<header></header>
+		<nav>
             <a href="#"><img src="icons/icon-dashboard.svg" alt="dashboard icon" class="nav-icons"></a>
-            <a href="#"><img src="icons/icon-members.svg" alt="members icon" class="nav-icons"></a>
-            <a href="#"><img src="icons/icon-visits.svg" alt="visits icon" class="nav-icons"></a>
-            <a href="#"><img src="icons/icon-settings.svg" alt="settings icon" class="nav-icons"></a>
+            <a href="#"><img src="icons/icon-members.svg" alt="dashboard icon" class="nav-icons"></a>
+            <a href="#"><img src="icons/icon-visits.svg" alt="dashboard icon" class="nav-icons"></a>
+            <a href="#"><img src="icons/icon-settings.svg" alt="dashboard icon" class="nav-icons"></a>
         </nav>
-
-        <main>
-            <div class="main-header"><!-- Dashboard and search-->
-                <h2>Dashboard</h2>
-                <div class="search">
-                    <input type="search" placeholder="Search"/>
-                </div>
-            </div><!-- End Dashboard and search-->
-            <div class="alert" id="alert"><!-- Alert with js-->
-                <p><span class="alert-span">Alert:</span> You are new notifications. Click the bell above to view</p>
-                <img src="icons/close.png" alt="close icon" class="cross">
-            </div><!-- End Alert with js-->
-            <section class="traffic"> <!-- Top main graph-->
-                <div class="traffic-header">
-                    <h3>Traffic</h3>
-                    <ul>
-                        <li>Hourly</li>
-                        <li>Daily</li>
-                        <li>Weekly</li>
-                        <li>Monthly</li>
-                    </ul>
-                </div>
-                <div class="widget-container-full">
-                    <!-- <img src="images/traffic graph.png" alt="traffic graph"> Temporary -->
-                    <!-- <canvas id="traffic-chart"></canvas> -->
-                </div>
-            </section><!-- EndTop main graph-->
-            <section class="daily-traffic"> <!-- small bar graph-->
-                <h3>Daily Traffic</h3>
-                <div class="widget-container-half">
-                    <!-- <img src="images/traffic daily (1).png" alt="traffic graph"> Temporary -->
-                    <!-- <canvas id="daily-chart"></canvas> -->
-                </div>
-            </section> <!-- end small bar graph-->
-            <section class="mobile-users"> <!-- doughnut graph-->
-                <h3>Mobile Users</h3>
-                <div class="widget-container-half">
-                    <!-- <img src="images/mobile graph.png" alt="traffic graph"> Temporary -->
-                    <!-- <canvas id="mobile-chart"></canvas> -->
-                </div>
-            </section> <!-- end doughnut graph-->
-            <section class="social"> <!-- Social media - 3 columns -->
-                <div class="twitter">
-                    <div class="social-img"></div> <!-- inline svg-->
-                    <div class="social-text"></div>
-                </div>
-                <div class="facebook">
-                    <div class="social-img"></div> <!-- inline svg-->
-                    <div class="social-text"></div>
-                </div>
-                <div class="google">
-                    <div class="social-img"></div> <!-- inline svg-->
-                    <div class="social-text"></div>
-                </div>
-            </section> <!-- end Social media - 3 columns -->
-            <section class="new-members"><!-- new members sep divs-->
-                <h3>New Members</h3>
-                <div class="member-contain">
-                    <img>
-                    <div class="member-text"></div>
-                    <p>dob</p>
-                </div>
-            </section> <!-- end new new members sep divs-->
-            <section class="recent-activity"><!-- recent activity sep divs-->
-                <h3>New Members</h3>
-                <div class="recent-contain">
-                    <img>
-                    <div class="recent-text"></div>
-                    <img arrow>
-                 </div>
-            </section><!-- end recent activity sep divs-->
-            <section class="message-user"><!-- user message form-->
-                <h3>Message User</h3>
-                <form>
-                    <input>
-                    <textarea></textarea>
-                    <button>Send</button>
-                </form>
-            </section><!-- end user message form-->
-            <section class="settings"><!-- toggle buttons and select field-->
-                <h3>Settings</h3>
-                <div>Toggle buttons</div>
-                <div>Toggle buttons</div>
-                <select></select>
-                <button>Save</button>
-                <button>Cancel</button>
-            </section><!-- end toggle buttons and select field-->
-        </main>
+		<main>
+			<div class="dash-top"></div> <!-- /dash-top -->
+			<div class="full-size-chart"></div> <!-- /full-size-chart -->
+			<div class="half-size-charts">
+				<div class="chart-1"></div>
+				<div class="chart-2"></div>
+			</div> <!-- /half-size-charts -->
+			<div class="social-media-info">
+				<div class="social-1"></div>
+				<div class="social-2"></div>
+				<div class="social-3"></div>
+			</div> <!-- /social-media-info -->
+			<div class="member-info">
+				<div class="members-1"></div>
+				<div class="members-2"></div>
+			</div> <!-- /member-info -->
+			<div class="message-and-settings">
+				<div class="message"></div>
+				<div class="settings"></div>
+			</div> <!-- /message-and-settings -->
+		</main>
+	</div>
     </div>
 <script src="js/jquery-3.5.0.min.js"></script>
 <!-- <script src="js/plugin/sticky-nav/jquery.sticky.js"></script> -->
