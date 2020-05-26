@@ -25,7 +25,7 @@ body {
     display: grid;
     height: 100%;
     grid-template-columns: 1fr;
-    grid-template-rows: 60px 80px 1fr;
+    grid-template-rows: 100px 80px 1fr;
     grid-template-areas:
     "header"
     "nav"
@@ -52,7 +52,7 @@ main {
 .member-info,
 .message-and-settings {
    display: grid;
-   /* grid-gap: 2px; */
+   grid-gap: 2px;
 }
 
 .half-size-charts,
@@ -64,6 +64,19 @@ main {
 .social-media-info {
     grid-template-columns: repeat(3, 1fr);
  }
+
+  /* ------
+Headings
+------ */
+
+h1 span.main-title {
+    font-weight: 200;
+}
+
+h1 {
+    text-shadow: 1px 0 1px #ddd;
+    font-size: 2.5em;
+}
 
  /* ------
 header area
@@ -87,7 +100,7 @@ nav {
 
 .nav-icons:hover {
     opacity: 1;
-    border-left: 1px solid white;
+    /* border-left: 1px solid white; */
 }
 
 
@@ -117,7 +130,7 @@ media-queries
 
  @media (min-width: 768px) {
      .grid-container {
-        grid-template-rows: 70px 80px 1fr;
+        grid-template-rows: 100px 80px 1fr;
 
      }
 }
@@ -125,7 +138,7 @@ media-queries
 @media (min-width: 1024px) {
     .grid-container {
         grid-template-columns: 80px 1fr;
-        grid-template-rows: 70px 1fr;
+        grid-template-rows: 100px 1fr;
         grid-template-areas:
         "header header"
         "nav main";
