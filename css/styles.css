@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    /* border: 1px solid; */
+    /* border: 1px solid #000; */
 }
 
 /* ------
@@ -52,7 +52,7 @@ main {
 .member-info,
 .message-and-settings {
    display: grid;
-   grid-gap: 2px;
+   /* grid-gap: 2px; */
 }
 
 .half-size-charts,
@@ -81,7 +81,15 @@ nav {
     display: inline-block;
     height: 60px;
     width: 60px;
+    opacity: .6;
+    transition: opacity .4s ease-in-out;
 }
+
+.nav-icons:hover {
+    opacity: 1;
+    border-left: 1px solid white;
+}
+
 
 /* ------
 Dashboard and alert
