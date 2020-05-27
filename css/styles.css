@@ -36,14 +36,12 @@ header {
     grid-area: header;
 }
 
-
 main {
     grid-area: main;
     display: grid;
 
 }
 
-.half-size-charts,
 .social-media-info,
 .member-info,
 .message-and-settings {
@@ -51,7 +49,6 @@ main {
    height: 400px;
 }
 
-.half-size-charts,
 .member-info,
 .message-and-settings {
    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
@@ -175,8 +172,8 @@ input {
 graphs
 ------ */
 .full-size-chart {
-    height: 400px;
     padding: 20px 10px;
+    border-bottom: 2px solid #e4e4e4;
 }
 
 ul.traffic-nav {
@@ -195,6 +192,22 @@ li.traffic-nav-link {
 li.traffic-nav-link:hover {
     background-color: #7477BF;
     color: white;
+}
+
+.full-graph {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.chart-1,
+.chart-2 {
+    border-bottom: 2px solid #e4e4e4;
+}
+
+.chart-1 img,
+.chart-2 img {
+    width: 100%;
+    margin: 10px 0;
 }
 
 /* ------
@@ -254,6 +267,12 @@ media-queries
         margin: 10px;
         font-size: 1.75em;
     }
+    .half-size-charts {
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    }
+    .chart-1 {
+        border-right: 2px solid #e4e4e4;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -264,10 +283,10 @@ media-queries
         "header header"
         "nav main";
      }
-    header {
+    /* header {
         position: sticky;
         top: 0;
-    }
+    } */
      .head-wrap {
         width: 95%;
         justify-content: space-between;
@@ -276,8 +295,8 @@ media-queries
      nav {
          flex-direction: column;
          justify-content: flex-start;
-         position: fixed;
-         top: 100px;
+         /* position: fixed;
+         top: 100px; */
      }
      .nav-icons {
          margin: 40px 20px;
