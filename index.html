@@ -40,11 +40,27 @@
             <a href="#"><img src="icons/icon-settings.svg" alt="dashboard icon" class="nav-icons"></a>
         </nav>
 		<main>
-			<div class="dash-top">
+			<div class="dash-top"> <!-- dash-top -->
                 <h2 class="dashboard">Dashboard</h2>
                 <div class="search"><input type="search" placeholder="Search"/></div>
             </div> <!-- /dash-top -->
-			<div class="full-size-chart"></div> <!-- /full-size-chart -->
+            <div class="alert" id="alert"><!-- Alert -->
+
+            </div> <!-- /Alert -->
+			<section class="full-size-chart"><!-- full-size-chart -->
+                <div class="full-size-header">
+                    <h3 class="traffic">Traffic</h3>
+                    <ul class="traffic-nav">
+                        <li class="traffic-nav-link">Hourly</li>
+                        <li class="traffic-nav-link">Daily</li>
+                        <li class="traffic-nav-link">Weekly</li>
+                        <li class="traffic-nav-link">Monthly</li>
+                    </ul>
+                </div>
+                <div class="full-chart-container">
+                    <canvas id="traffic-chart"></canvas>
+                </div>
+            </section> <!-- /full-size-chart -->
 			<div class="half-size-charts">
 				<div class="chart-1"></div>
 				<div class="chart-2"></div>

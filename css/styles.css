@@ -50,9 +50,6 @@ main {
    display: grid;
    height: 400px;
 }
-.full-size-chart {
-    height: 400px;
-}
 
 .half-size-charts,
 .member-info,
@@ -88,6 +85,12 @@ h3.name {
     padding-left: 30px;
     font-weight: 500;
     border-left: 2px solid rgba(169, 148, 202, 0.6);
+}
+
+h3.traffic {
+    display: inline;
+    font-size: 2em;
+    margin: 10px;
 }
 
  /* ------
@@ -163,11 +166,36 @@ input {
     margin-top: 12px;
     border: 1px solid #ddd;
     padding-left: 4px;
+    background-image: url('../icons/search_icon.png');
+    background-position: 95%;
+    background-repeat: no-repeat;
 }
 
 /* ------
 graphs
 ------ */
+.full-size-chart {
+    height: 400px;
+    padding: 20px 10px;
+}
+
+ul.traffic-nav {
+    display: inline;
+    float: right;
+}
+
+li.traffic-nav-link {
+    display: inline;
+    padding: 8px 16px;
+    margin: 6px;
+    transition: background-color .5s ease-out;
+    border-radius: 30px;
+}
+
+li.traffic-nav-link:hover {
+    background-color: #7477BF;
+    color: white;
+}
 
 /* ------
 members and activity
@@ -222,6 +250,10 @@ media-queries
         margin-left: 20px;
         border-radius: 50%;
     }
+    li.traffic-nav-link {
+        margin: 10px;
+        font-size: 1.75em;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -265,10 +297,18 @@ media-queries
          height: 100px;
      }
      input {
-         height: 4em;
+         height: 3em;
          width: 40%;
          float: right;
          margin-right: 40px;
+         padding: 10px;
+     }
+
+     input::placeholder {
+         font-size: 2em;
+     }
+     h3.traffic {
+        margin-left: 28px;
      }
 
 }
