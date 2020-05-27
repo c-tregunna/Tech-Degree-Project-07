@@ -87,8 +87,13 @@ h3.name {
 
 h3.traffic {
     display: inline;
-    font-size: 2em;
+    font-size: 1.75em;
     margin: 10px;
+    text-transform: uppercase;
+}
+
+h3.half-head {
+
 }
 
  /* ------
@@ -207,6 +212,7 @@ li.traffic-nav-link:hover {
 .chart-1,
 .chart-2 {
     border-bottom: 2px solid #e4e4e4;
+    padding: 20px 0;
 }
 
 .chart-1 img,
