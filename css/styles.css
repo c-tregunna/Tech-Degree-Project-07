@@ -195,7 +195,8 @@ li.traffic-nav-link {
     border-radius: 30px;
 }
 
-li.traffic-nav-link:hover {
+li.traffic-nav-link:hover,
+li.traffic-nav-link:active {
     background-color: #7477BF;
     color: white;
 }
@@ -279,7 +280,7 @@ media-queries
         font-size: 1.75em;
     }
     .half-size-charts {
-    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        grid-template-columns: repeat(2, minmax(500px, 1fr));
     }
     .chart-1 {
         border-right: 2px solid #e4e4e4;
