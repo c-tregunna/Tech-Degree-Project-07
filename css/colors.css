@@ -9,7 +9,7 @@ body {
 /* .dash-top, */
 /* .full-size-chart, */
 /* .half-size-charts, */
-.social-media-info,
+/* .social-media-info, */
 .member-info,
 .message-and-settings {
 	background: rgba(76, 79, 83, 0.2);
@@ -22,9 +22,9 @@ body {
 .members-2 {
 	background: rgba(169, 148, 202, 0.2);
 }
-.social-1,
+/* .social-1,
 .social-2,
-.social-3,
+.social-3, */
 .message,
 .settings {
 	background: rgba(108, 108, 211, 0.2);

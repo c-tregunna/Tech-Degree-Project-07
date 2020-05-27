@@ -32,6 +32,19 @@ body {
     "main";
 }
 
+p.social-name {
+    font-size: 1.6em;
+    color: #466B00;
+    font-weight: 700;
+}
+
+p.totals {
+    font-size: 4em;
+    margin-top: 6px;
+    color: #676865;
+    font-weight: 300;
+}
+
 header {
     grid-area: header;
 }
@@ -39,11 +52,10 @@ header {
 main {
     grid-area: main;
     display: grid;
-
 }
 
 
-.social-media-info,
+/* .social-media-info, */
 .member-info,
 .message-and-settings {
    display: grid;
@@ -87,13 +99,16 @@ h3.name {
 
 h3.traffic {
     display: inline;
-    font-size: 1.75em;
+    font-size: 1.5em;
     margin: 10px;
     text-transform: uppercase;
 }
 
-h3.half-head {
-
+h3.social {
+    display: block;
+    font-size: 1.5em;
+    margin: 10px;
+    text-transform: uppercase;
 }
 
  /* ------
@@ -201,13 +216,14 @@ li.traffic-nav-link:active {
     color: white;
 }
 
-.full-graph {
+/* .full-graph {
     width: 100%;
     margin: 20px 0;
-}
+} */
 
 .half-size-charts {
     display: grid;
+    padding: 20px 10px;
 }
 
 .chart-1,
@@ -220,6 +236,38 @@ li.traffic-nav-link:active {
 .chart-2 img {
     width: 100%;
     margin: 10px 0;
+}
+
+/* ------
+Social
+------ */
+.social-media-info {
+    padding: 20px 10px;
+}
+.social-inner,
+.social-flex {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+}
+
+.social-1,
+.social-2,
+.social-3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px solid #e4e4e4;
+    border-radius: 5px;
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.social-image img {
+    border-radius: 50%;
 }
 
 /* ------
@@ -344,6 +392,15 @@ media-queries
      h3.traffic {
         margin-left: 28px;
      }
+     .social-flex {
+         flex-direction: row;
+         justify-content: space-evenly;
+     }
+     .social-1,
+     .social-2,
+     .social-3 {
+        width: 30%;
+    }
 
 }
 
