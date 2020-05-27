@@ -264,6 +264,7 @@ Social
     width: 80%;
     margin: 20px auto;
     padding: 20px;
+    background: rgba(225, 239, 56, .1);;
 }
 
 .social-image img {
@@ -391,6 +392,9 @@ media-queries
      }
      h3.traffic {
         margin-left: 28px;
+     }
+     .social-media-info {
+        margin: 0 20px;
      }
      .social-flex {
          flex-direction: row;
