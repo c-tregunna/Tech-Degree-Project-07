@@ -32,10 +32,13 @@ body {
 
 
 header {
-	background: #7477BF;
+	/* background: #7477BF; */
+	background: rgb(225, 239, 56);
 }
 nav {
-	background: #4D4C71;
+	/* background: #4D4C71; */
+	/* background: rgb(129, 178, 37); */
+	background: #466B00;
 }
 main {
 	background: white;

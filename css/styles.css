@@ -197,7 +197,7 @@ li.traffic-nav-link {
 
 li.traffic-nav-link:hover,
 li.traffic-nav-link:active {
-    background-color: #7477BF;
+    background-color: #466B00;
     color: white;
 }
 
@@ -326,6 +326,9 @@ media-queries
      h2.dashboard {
          margin-top: 40px;
          height: 100px;
+     }
+     .search {
+         border-top: none;
      }
      input {
          height: 3em;
