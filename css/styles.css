@@ -42,6 +42,7 @@ main {
 
 }
 
+
 .social-media-info,
 .member-info,
 .message-and-settings {
@@ -197,6 +198,10 @@ li.traffic-nav-link:hover {
 .full-graph {
     width: 100%;
     margin: 20px 0;
+}
+
+.half-size-charts {
+    display: grid;
 }
 
 .chart-1,
