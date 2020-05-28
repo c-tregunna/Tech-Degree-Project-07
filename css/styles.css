@@ -39,7 +39,7 @@ p.social-name {
 }
 
 p.totals {
-    font-size: 4em;
+    font-size: 3em;
     margin-top: 6px;
     color: #676865;
     font-weight: 300;
@@ -424,6 +424,9 @@ media-queries
      .social-3 {
         width: 30%;
     }
+    p.totals {
+        font-size: 4em;
+    }
     .member-info {
         flex-direction: row;
         justify-content: space-evenly;
@@ -436,6 +439,7 @@ media-queries
     .members-2 {
         border-left: 2px solid #e4e4e4;
     }
+
 
 }
 
