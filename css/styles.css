@@ -311,11 +311,21 @@ members and activity
     border-bottom: none;
 }
 
+.member-email {
+    width: 40%;
+}
+
 .member-data img {
     border-radius: 50%;
     width: 80px;
     height: 80px;
     box-shadow: 1px 1px 4px #333;
+}
+
+.member-data img.arrow {
+    box-shadow: none;
+    width: 15px;
+    width: 15px;
 }
 
 
@@ -468,7 +478,7 @@ media-queries
     }
     .member-email {
         flex-grow: 2;
-        margin-left: 40px;
+        margin-left: 10px;
     }
 
 
