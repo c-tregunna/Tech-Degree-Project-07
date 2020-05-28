@@ -466,6 +466,10 @@ media-queries
     .members-2 {
         border-left: 2px solid #e4e4e4;
     }
+    .member-email {
+        flex-grow: 2;
+        margin-left: 40px;
+    }
 
 
 }
