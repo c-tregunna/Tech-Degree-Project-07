@@ -45,6 +45,17 @@ p.totals {
     font-weight: 300;
 }
 
+p.full-name,
+p.date {
+    font-size: .9em;
+    font-weight: 600;
+}
+
+p.email {
+    color: #466B00;
+    font-size: .8em;
+}
+
 header {
     grid-area: header;
 }
@@ -101,7 +112,7 @@ h3.traffic,
 h3.social,
 h3.members {
     display: inline;
-    font-size: 1.5em;
+    font-size: 1.25em;
     margin: 10px;
     text-transform: uppercase;
 }
@@ -264,6 +275,8 @@ Social
 
 .social-image img {
     border-radius: 50%;
+    width: 80px;
+    height: 80px;
 }
 
 /* ------
@@ -272,24 +285,37 @@ members and activity
 
 .member-info {
     display: flex;
+    flex-direction: column;
     border-top: 2px solid #e4e4e4;
-    height: 400px;
 }
 
 .members-1,
 .members-2  {
     width: 100%;
     border-bottom: 2px solid #e4e4e4;
+    padding: 10px;
 }
 
 .member-data {
     width: 90%;
     margin: auto;
     border-bottom: 1px solid #e4e4e4;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
 }
 
 .member-data:last-child {
     border-bottom: none;
+}
+
+.member-data img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    box-shadow: 1px 1px 4px #333;
 }
 
 
