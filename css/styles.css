@@ -248,6 +248,7 @@ media-queries
         height: 100px;
         grid-template-rows: 1fr;
         grid-template-columns: 200px 1fr;
+        padding-top: 0;
     }
     .search {
         height: 100px;
