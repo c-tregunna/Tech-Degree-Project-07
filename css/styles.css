@@ -74,6 +74,10 @@ h1 {
     font-size: 1.75em;
 }
 
+h3 {
+    font-size: 1.1em;
+}
+
 h3.name {
     grid-area: name;
     display: inline;
@@ -160,13 +164,14 @@ Dashboard and alert
     border-bottom: 1px solid #ccc;;
     background-color: #eee;
 }
-input {
+input.search {
     height: 30px;
     width: 80%;
     border-radius: 8px;
     margin-top: 12px;
     border: 1px solid #ddd;
     padding-left: 4px;
+    background: #fff;
     background-image: url('../icons/search_icon.png');
     background-position: 95%;
     background-repeat: no-repeat;
@@ -271,6 +276,27 @@ members and activity
 Forms
 ------ */
 
+.message-and-settings {
+    display: flex;
+    flex-direction: column;
+}
+.message,
+.settings {
+    height: 400px;
+    width: 100%;
+    padding: 10px;
+}
+
+form {
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+input.user {
+    width: 100%;
+    background-color: #e7e6e6;
+}
 
 /* ------
 Settings
@@ -315,10 +341,12 @@ media-queries
      .social-3 {
         width: 30%;
     }
-    .member-info {
+    .member-info,
+    .message-and-settings {
         flex-direction: row;
     }
-    .members-2 {
+    .members-2,
+    .settings {
         border-left: 2px solid #e4e4e4;
     }
 }
@@ -356,14 +384,14 @@ media-queries
     .search {
         border-top: none;
     }
-    input {
+    input.search {
         height: 2em;
         width: 40%;
         float: right;
         margin-right: 40px;
         padding: 10px;
     }
-    input::placeholder {
+    input.search::placeholder {
         font-size: 1em;
     }
 

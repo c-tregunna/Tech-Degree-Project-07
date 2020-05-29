@@ -8,10 +8,11 @@ body {
 }
 .dash-top,
 .full-size-chart,
-.half-size-charts,
+.half-size-charts
+/* .message-and-settings */
 /* .social-media-info, */
 /* .member-info, */
-.message-and-settings {
+ {
 	background: rgba(76, 79, 83, 0.2);
 }
 
@@ -25,9 +26,9 @@ body {
 .social-2,
 .social-3, */
 /* .message, */
-.settings {
+/* .settings {
 	background: rgba(108, 108, 211, 0.2);
-}
+} */
 
 
 header {
