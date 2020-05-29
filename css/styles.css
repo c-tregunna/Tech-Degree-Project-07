@@ -41,6 +41,25 @@ main {
     display: grid;
 }
 
+p.full-name,
+p.date {
+    font-size: .75em;
+    font-weight: 500;
+}
+
+p.email {
+    color: #466B00;
+    font-size: .6em;
+}
+
+p.member-comments {
+    font-size: .6em;
+}
+
+p.time-frame {
+    font-size: .75em;
+}
+
 
   /* ------
 Headings
@@ -74,19 +93,30 @@ header area
 
 .lower-head-wrap {
     width: 80%;
+    max-width: 256px;
     margin: auto;
     display: flex;
     justify-content: space-evenly;
 }
 
 .bell-icon {
-    height: 20px;
-    width: 20px;
+    display: inline-block;
+    width: 60px;
+    transition: all .5s ease-in-out;;
+    padding: 0 1rem;
+    border-right:1px solid rgba(169, 148, 202, 0.6);
 }
 
 img.profile-img {
     display: none;
  }
+
+ /* ------
+Bell animation
+------ */
+.bell-icon:hover {
+    transform: rotate(30deg) scale(1.1);
+}
 
 /* ------
 Navigation
@@ -154,9 +184,9 @@ Social
 .social-media-info {
     grid-template-columns: repeat(3, 1fr);
  }
-.social-media-info {
+/* .social-media-info {
     padding: 20px 10px;
-}
+} */
 .social-inner,
 .social-flex {
     display: flex;
@@ -190,7 +220,50 @@ Social
 members and activity
 ------ */
 
+.member-info {
+    display: flex;
+    flex-direction: column;
+    border-top: 2px solid #e4e4e4;
+}
 
+.members-1,
+.members-2  {
+    width: 100%;
+    border-bottom: 2px solid #e4e4e4;
+    padding: 10px;
+}
+
+.member-data {
+    display: flex;
+    border-bottom: 1px solid #e4e4e4;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.member-data:last-child {
+    border-bottom: none;
+}
+
+.member-email,
+.member-comment-contain {
+    flex-grow: 2;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.member-data img.arrow {
+    box-shadow: none;
+    width: 15px;
+    width: 15px;
+}
+
+.member-data img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    box-shadow: 1px 1px 4px #333;
+}
 
 
 
@@ -217,6 +290,7 @@ media-queries
     .lower-head-wrap {
         justify-content: flex-end;
         align-items: center;
+        max-width: 80%;
     }
     img.profile-img {
         display: inline;
@@ -227,6 +301,26 @@ media-queries
     }
     h3.name {
         margin-left: 30px;
+    }
+    .social-media-info {
+        margin: 0 20px;
+     }
+     .social-flex {
+         flex-direction: row;
+         justify-content: space-evenly;
+         width: 100%;
+     }
+     .social-1,
+     .social-2,
+     .social-3 {
+        width: 30%;
+    }
+    .member-info {
+        flex-direction: row;
+    }
+    .members-2 {
+        border-left: 2px solid #e4e4e4;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -272,6 +366,7 @@ media-queries
     input::placeholder {
         font-size: 1em;
     }
+
 }
 
 
