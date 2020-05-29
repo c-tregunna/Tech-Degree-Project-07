@@ -56,6 +56,14 @@ p.email {
     font-size: .8em;
 }
 
+p.member-comments {
+    font-size: .8em;
+}
+
+p.time-frame {
+    font-size: .9em;
+}
+
 header {
     grid-area: header;
 }
@@ -312,7 +320,7 @@ members and activity
 }
 
 .member-email {
-    width: 40%;
+    width: 50%;
 }
 
 .member-data img {
