@@ -200,15 +200,13 @@ graphs - Main
     padding: 10px;
 }
 
-ul.traffic-nav {
+/* ul.traffic-nav {
     display: inline;
-    float: right;
-
-}
+} */
 
 li.traffic-nav-link {
     display: inline;
-    padding: 8px 6px;
+    padding: 8px 4px;
     margin: 6px;
     transition: background-color .5s ease-out;
     border-radius: 30px;
@@ -261,7 +259,7 @@ Social
 .social-1:hover,
 .social-2:hover,
 .social-3:hover {
-    background: rgba(225, 239, 56, .5);
+    background: rgba(225, 239, 56, .8);
 }
 
 .social-image img {
@@ -318,8 +316,6 @@ members and activity
     height: 40px;
     box-shadow: 1px 1px 4px #333;
 }
-
-
 
 /* ------
 Forms
@@ -478,6 +474,7 @@ media-queries
     }
     li.traffic-nav-link {
         font-size: .9em;
+        padding: 8px;
     }
 
 }
