@@ -358,6 +358,10 @@ input.user {
     margin: 20px 0;
 }
 
+input:focus {
+ outline: none;
+}
+
 button.message {
     background-color: rgb(225, 239, 56);
     border: none;
@@ -405,17 +409,16 @@ label.switch-light {
 
 }
 
-.switch-candy a {
+.switch-ios.switch-light input:checked ~ span{
     background-color: rgb(225, 239, 56);
-    border-radius: 20px;
+    box-shadow: none;
 }
 
-.switch-light.switch-candy > span  {
-    background-color: #efefef;
-    border-radius: 20px;
+.switch-ios.switch-light input:checked ~ span span:last-of-type {
+    color: black;
 }
 
-input.checkbox {
+.switch-ios.switch-light input:focus ~ span a {
     outline: none;
 }
 
