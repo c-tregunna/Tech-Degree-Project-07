@@ -378,6 +378,34 @@ Settings
 ------ */
 
 /* ------
+Toggle buttons
+------ */
+.toggle-contain {
+    display: flex;
+    flex-direction: column;
+}
+
+.email-notif,
+.public-profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+label.switch-light {
+    width: 50%;
+    float: right;
+}
+
+.switch-candy a {
+    background-color: rgb(225, 239, 56);
+}
+
+.toggle {
+    background-color: red;
+}
+/* ------
 media-queries
 ------ */
 
@@ -478,5 +506,4 @@ media-queries
     }
 
 }
-
 
