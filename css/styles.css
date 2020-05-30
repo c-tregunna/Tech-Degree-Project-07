@@ -41,6 +41,19 @@ main {
     display: grid;
 }
 
+p.social-name {
+    font-size: 1.25em;
+    color: #466B00;
+    font-weight: 700;
+}
+
+p.totals {
+    font-size: 2em;
+    margin-top: 6px;
+    color: #676865;
+    font-weight: 300;
+}
+
 p.full-name,
 p.date {
     font-size: .75em;
@@ -188,10 +201,9 @@ Social
 
 .social-media-info {
     grid-template-columns: repeat(3, 1fr);
+    width: 100%;
  }
-/* .social-media-info {
-    padding: 20px 10px;
-} */
+
 .social-inner,
 .social-flex {
     display: flex;
@@ -212,7 +224,14 @@ Social
     width: 80%;
     margin: 20px auto;
     padding: 20px;
-    background: rgba(225, 239, 56, .1);;
+    background: rgba(225, 239, 56, .1);
+    transition: background .3s ease-in-out;
+}
+
+.social-1:hover,
+.social-2:hover,
+.social-3:hover {
+    background: rgba(225, 239, 56, .5);
 }
 
 .social-image img {
@@ -282,7 +301,6 @@ Forms
 }
 .message,
 .settings {
-    height: 400px;
     width: 100%;
     padding: 10px;
 }
@@ -293,9 +311,39 @@ form {
     text-align: center;
 }
 
-input.user {
+input.user,
+textarea {
     width: 100%;
-    background-color: #e7e6e6;
+    background-color: #efefef;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    padding: 4px 4px;
+}
+
+input.user::placeholder,
+textarea::placeholder {
+    font-size: .8em;
+    color: #ccc;
+    letter-spacing: 1px;
+}
+
+input.user {
+    height: 2em;
+    margin: 10px 0;
+}
+
+button.message {
+    background-color: rgb(225, 239, 56);
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+
+}
+
+button.message:hover {
+    background-color: #466B00;
+    color: white;
 }
 
 /* ------
