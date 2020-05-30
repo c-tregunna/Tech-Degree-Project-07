@@ -391,20 +391,34 @@ Toggle buttons
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 30px;
+    padding-right: 20px;
+}
+
+.email-notif {
+    margin-top: 14px;
 }
 
 label.switch-light {
-    width: 50%;
+    width: 100px;
     float: right;
+
 }
 
 .switch-candy a {
     background-color: rgb(225, 239, 56);
+    border-radius: 20px;
 }
 
-.toggle {
-    background-color: red;
+.switch-light.switch-candy > span  {
+    background-color: #efefef;
+    border-radius: 20px;
 }
+
+input.checkbox {
+    outline: none;
+}
+
 /* ------
 media-queries
 ------ */
