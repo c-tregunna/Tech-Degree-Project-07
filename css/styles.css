@@ -328,16 +328,17 @@ textarea::placeholder {
 }
 
 input.user {
-    height: 2em;
-    margin: 10px 0;
+    height: 3em;
+    margin: 20px 0;
 }
 
 button.message {
     background-color: rgb(225, 239, 56);
     border: none;
     border-radius: 5px;
-    margin-top: 10px;
-    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    transition: background .3s ease-in-out;
 
 }
 
