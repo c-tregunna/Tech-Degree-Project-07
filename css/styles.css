@@ -191,7 +191,37 @@ input.search {
 }
 
 /* ------
-graphs
+graphs - Main
+------ */
+.full-size-header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+ul.traffic-nav {
+    display: inline;
+    float: right;
+
+}
+
+li.traffic-nav-link {
+    display: inline;
+    padding: 8px 6px;
+    margin: 6px;
+    transition: background-color .5s ease-out;
+    border-radius: 30px;
+    font-size: .7em;
+}
+
+li.traffic-nav-link:hover,
+li.traffic-nav-link:active {
+    background-color: rgba(225, 239, 56, .4);
+}
+
+/* ------
+graphs - Half
 ------ */
 
 
@@ -377,6 +407,9 @@ media-queries
     h3.name {
         margin-left: 30px;
     }
+    li.traffic-nav-link {
+        font-size: .8em;
+    }
     .social-media-info {
         margin: 0 20px;
      }
@@ -442,6 +475,9 @@ media-queries
     }
     input.search::placeholder {
         font-size: 1em;
+    }
+    li.traffic-nav-link {
+        font-size: .9em;
     }
 
 }
