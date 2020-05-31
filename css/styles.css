@@ -39,6 +39,7 @@ header {
 main {
     grid-area: main;
     display: grid;
+    overflow: auto;
 }
 
 p.social-name {
@@ -131,6 +132,13 @@ img.profile-img {
     display: none;
  }
 
+ .dot {
+     width: 10px;
+     height: 10px;
+     background-color: tomato;
+     border-radius: 50%;
+ }
+
  /* ------
 Bell animation
 ------ */
@@ -170,9 +178,6 @@ nav {
     position: sticky;
     top: 0;
     height: 100%;
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
-    top: 0;
 }
 
 .nav-icons {
