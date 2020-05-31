@@ -18,5 +18,5 @@ $(".dot").click(function() {
 });
 
 $( "span.close" ).click(function() {
-    $( "ul.notifications li" ).slideUp( 600 );
-  });
+    $(this).parent().hide( 600 );
+});

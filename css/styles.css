@@ -140,8 +140,8 @@ img.profile-img {
 ul.notifications {
     display: none;
     position: absolute;
-    top: 80px;
-
+    top: 100px;
+    z-index: 10000;
 }
 
 ul.notifications li {
@@ -619,6 +619,9 @@ media-queries
     }
     .name-contain {
         padding-left: 0;
+    }
+    ul.notifications {
+        top: 80px;
     }
     li.traffic-nav-link {
         font-size: .8em;
