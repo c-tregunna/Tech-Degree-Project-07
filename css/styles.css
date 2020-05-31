@@ -340,8 +340,6 @@ Social
     margin: auto;
 }
 
-
-
 /* ------
 members and activity
 ------ */
@@ -442,6 +440,11 @@ select:focus {
 button {
     transition: background .3s ease-in-out;
     box-shadow: 0 2px 2px #555;
+}
+
+button:active {
+    box-shadow: 0 1px #666;
+    transform: translateY(1px);
 }
 button.message {
     background-color: rgb(225, 239, 56);
