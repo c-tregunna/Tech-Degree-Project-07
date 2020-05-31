@@ -318,14 +318,29 @@ Social
 .social-1:hover,
 .social-2:hover,
 .social-3:hover {
-    background: rgba(225, 239, 56, .8);
+    background: rgba(225, 239, 56, .6);
 }
 
-.social-image img {
+#layer_1 {
+    width: 40px;
+    height: 40px;
+}
+
+.social-image {
+    display: flex;
+    justify-content: center;
     border-radius: 50%;
     width: 80px;
     height: 80px;
+    background-color: #466B00;
+    border: 1px solid #ccc;
 }
+
+.social-image svg {
+    margin: auto;
+}
+
+
 
 /* ------
 members and activity
