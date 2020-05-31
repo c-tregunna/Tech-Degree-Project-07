@@ -19,8 +19,10 @@
             </div>
             <div class="lower-head-wrap">
                 <img src="icons/icon-bell.svg" alt="bell icon" class="bell-icon">
-                <img src="images/meg.jpg" alt="profile image" class="profile-img">
-                <h3 class="name">Claire Tregunna</h3>
+                <div class="name-contain">
+                    <img src="images/meg.jpg" alt="profile image" class="profile-img">
+                    <h3 class="name">Claire Tregunna</h3>
+                </div>
             </div>
         </header>
 		<nav>
@@ -199,6 +201,17 @@
                                 </span>
                             </label>
                         </div>
+                    </div>
+                    <select id="county" name="user_county" class="select-county">
+                        <option>Select Timzone</option>
+                          <option value="gmt">GMT - Greenwich Mean Time</option>
+                          <option value="pst">PST - Pacific Standard Time</option>
+                          <option value="cst">CST - Central Standard Time</option>
+                          <option value="est">EST - Eastern Standard Time</option>
+                    </select>
+                    <div class="button-contain">
+                        <button class="save">Save</button>
+                        <button class="cancel">Cancel</button>
                     </div>
                 </div>
 			</section> <!-- /message-and-settings -->
