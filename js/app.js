@@ -1,3 +1,22 @@
-// for sticky nav if needed and can get it to work
-    // $(".header").sticky({responsiveWidth: true});
+const alertBanner = document.getElementById("alert");
+// create the html for the banner
+alertBanner.innerHTML =
+`
+<div class="alert-banner">
+<p><strong>Alert:</strong> You have <strong>3</strong> overdue tasks
+to complete</p>
+<p class="alert-banner-close">X</p>
+</div>
+`
 
+$( "p.alert-banner-close" ).click(function() {
+    $( "#alert" ).hide( 600 );
+  });
+
+$(".dot").click(function() {
+    $("ul.notifications").show();
+});
+
+$( "span.close" ).click(function() {
+    $( "ul.notifications li" ).hide( 600 );
+  });
