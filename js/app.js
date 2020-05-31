@@ -10,7 +10,7 @@ to complete</p>
 `
 
 $( "p.alert-banner-close" ).click(function() {
-    $( "#alert" ).hide( 600 );
+    $( "#alert" ).hide( 800 );
   });
 
 $(".dot").click(function() {
@@ -18,5 +18,5 @@ $(".dot").click(function() {
 });
 
 $( "span.close" ).click(function() {
-    $( "ul.notifications li" ).hide( 600 );
+    $( "ul.notifications li" ).slideUp( 600 );
   });
