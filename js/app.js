@@ -21,7 +21,7 @@ $(".dot, .bell-icon").click(function() { //Show notifcations on click of dot
 });
 
 $(".dot, .bell-icon").click(function() { //Show notifcations on click of dot
-    $(".dot").fadeOut();
+    $(".dot").fadeOut(600);
 });
 
 $( "span.close" ).click(function() { // hide each li when X is clicked
@@ -56,3 +56,18 @@ var chart = new Chart(ctx, {
         }
 });
 
+
+function validateForm() {
+    let validateSearch = document.forms["search-form"]["search"].value;
+    let validateMessage = document.forms["search-form"]["user-message"].value;
+
+    if (validateSearch === "") {
+      alert("Search for user name must be complete. Please try again");
+      return false;
+    } if (validateMessage === "") {
+        alert("Message for user must be complete. Please try again");
+      return false;
+    } else if (validateSearch === true && validateMessage === true) {
+        alert("Your message has been sent");
+    }
+  }

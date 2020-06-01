@@ -1,6 +1,5 @@
 * {
     box-sizing: border-box;
-    /* border: 1px solid #000; */
 }
 
 /* ------
@@ -348,6 +347,7 @@ Social
 .social-media-info {
     grid-template-columns: repeat(3, 1fr);
     width: 100%;
+    padding: 10px;
  }
 
 .social-inner,
@@ -636,9 +636,6 @@ media-queries
     li.traffic-nav-link {
         font-size: .8em;
     }
-    .social-media-info {
-        margin: 0 20px;
-     }
      .social-flex {
          flex-direction: row;
          justify-content: space-evenly;
