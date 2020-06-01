@@ -67,7 +67,8 @@ function validateForm() {
     } if (validateMessage === "") {
         alert("Message for user must be complete. Please try again");
       return false;
-    } else if (validateSearch === true && validateMessage === true) {
+    }  else {
         alert("Your message has been sent");
+        return true;
     }
   }
