@@ -68,7 +68,7 @@ function validateForm() {
         alert("Message for user must be complete. Please try again");
       return false;
     }  else {
-        alert("Your message has been sent");
+        alert("Thank you. Your message has been sent to the user");
         return true;
     }
   }
