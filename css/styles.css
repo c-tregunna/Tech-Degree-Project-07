@@ -258,6 +258,10 @@ nav a:hover {
     border-left: 2px solid white ;
 }
 
+nav a:enabled {
+    background-color:pink;
+}
+
 /* ------
 Dashboard and alert
 ------ */
@@ -349,6 +353,7 @@ li.traffic-nav-link:active {
 #daily-chart,
 #mobile-chart {
     max-width: 100%;
+    margin-top: 20px;
 }
 
 /* ------

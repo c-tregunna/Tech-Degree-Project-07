@@ -18,14 +18,14 @@ let lineChart = new Chart(trafficChart, {
             data: [750, 1000, 1250, 1100, 1500, 1750, 1300, 1600, 1200, 2050, 1750],
             lineTension: 0,
             pointRadius: 6,
-            pointHoverRadius: 3,
-            pointHoverBackgroundColor: '#fff'
+            pointBackgroundColor: '#fff',
+            pointHoverRadius: 3
         }]
     },
     options: {
         legend: {
             display: false
-        }
+        },
     }
 });
 
@@ -44,6 +44,7 @@ let barChart = new Chart(dailyChart, {
         datasets: [{
             // label: 'Traffic Data',
             backgroundColor: 'rgb(225, 239, 56)',
+            hoverBackgroundColor: 'rgb(70, 107, 0)',
             data: [75, 100, 175, 150, 125, 225, 200, 120]
         }]
     },
