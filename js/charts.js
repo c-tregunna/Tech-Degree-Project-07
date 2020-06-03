@@ -2,6 +2,7 @@
 
 let trafficChart = document.getElementById('traffic-chart').getContext('2d');
 
+Chart.defaults.global.animation.easing = 'easeInOutQuad',
 Chart.defaults.global.defaultFontFamily = 'Josefin Sans',
 Chart.defaults.global.defaultFontWeight = 100;
 
@@ -16,7 +17,8 @@ let lineChart = new Chart(trafficChart, {
             borderWidth: 2,
             data: [750, 1000, 1250, 1100, 1500, 1750, 1300, 1600, 1200, 2050, 1750],
             lineTension: 0,
-            pointHoverRadius: 6,
+            pointRadius: 6,
+            pointHoverRadius: 3,
             pointHoverBackgroundColor: '#fff'
         }]
     },
