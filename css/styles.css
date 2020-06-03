@@ -319,12 +319,6 @@ graphs - Main
     padding: 10px;
 }
 
-/* .full-chart-container {
-    position: relative;
-    height:40vh;
-    overflow: hidden;
-} */
-
 .full-size-chart,
 .half-size-charts,
 .chart-1 {
