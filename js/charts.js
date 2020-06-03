@@ -67,14 +67,16 @@ let doughnutChart = new Chart(mobileChart, {
         datasets: [{
             backgroundColor: [
             'rgb(70, 107, 0)',
-            'rgb(169, 148, 202)',
+            '#56BAEC',
             'rgb(225, 239, 56)'
         ],
             data: [73, 62, 225]
         }]
     },
     options: {
-
+        legend: {
+            position: 'right'
+        }
     }
 });
 // Create data for daily, weekly, monthly, hourly

@@ -345,7 +345,9 @@ li.traffic-nav-link:active {
     background-color: rgba(225, 239, 56, .8);
 }
 
-#traffic-chart {
+#traffic-chart,
+#daily-chart,
+#mobile-chart {
     max-width: 100%;
 }
 
