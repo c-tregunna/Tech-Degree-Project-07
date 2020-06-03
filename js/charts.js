@@ -82,6 +82,8 @@ let doughnutChart = new Chart(mobileChart, {
         }
     }
 });
+// Mobile user chart end *********************
+
 // Create data for daily, weekly, monthly, hourly
 // Create labels for daily, weekly, monthly, hourly
 // on click of traffic nav
@@ -89,3 +91,5 @@ let doughnutChart = new Chart(mobileChart, {
 // if weekly open weekly data show chart on click if li
 // if daily open daily data show chart on click if li
 // if monthly open monthly data show chart on click if li
+// active or disabled added to li's on click
+// separate canvas for each graph

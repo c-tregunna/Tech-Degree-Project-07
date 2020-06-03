@@ -254,12 +254,9 @@ nav a {
     border-left: 2px solid transparent ;
 }
 
-nav a:hover {
+nav a:hover,
+nav a:active {
     border-left: 2px solid white ;
-}
-
-nav a:enabled {
-    background-color:pink;
 }
 
 /* ------
@@ -338,7 +335,7 @@ graphs - Main
 li.traffic-nav-link {
     display: inline;
     padding: 8px 4px;
-    margin: 6px;
+    margin: 4px;
     transition: background-color .5s ease-out;
     border-radius: 30px;
     font-size: .7em;
@@ -355,6 +352,11 @@ li.traffic-nav-link:active {
     max-width: 100%;
     margin-top: 20px;
 }
+
+.disabled {
+    visibility: hidden;
+}
+
 
 /* ------
 graphs - Half
@@ -727,6 +729,13 @@ media-queries
     .half-size-charts {
         display: flex;
         flex-direction: row;
+    }
+    #traffic-chart {
+        width: 90vw!important;
+        height: 400px!important;
+    }
+    .full-chart-container {
+        width: 90vw;
     }
     .chart-1 {
         border-bottom: none;
