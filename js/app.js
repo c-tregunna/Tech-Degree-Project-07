@@ -28,34 +28,7 @@ $( "span.close" ).click(function() { // hide each li when X is clicked
     $(this).parent().slideUp( 400 );
 });
 
-
-// Main traffice grapg
-
-var ctx = document.getElementById('traffic-chart').getContext('2d');
-var chart = new Chart(ctx, {
-    // The type of chart we want to create
-    type: 'line',
-
-    // The data for our dataset
-    data: {
-        labels: ['16-22', '23-29', '30-5', '6-12', '13-19', '20-26', '27-3', '4-10', '11-17', '18-24', '25-31'],
-        datasets: [{
-            label: 'My First dataset',
-            backgroundColor: 'rgba(225, 239, 56, .6)',
-            borderColor: 'rgb(70, 107, 0)',
-            data: [750, 1000, 1250, 1100, 1500, 1750, 1500, 1600, 1200, 1800, 2400]
-        }]
-    },
-
-    // Configuration options go here
-    options: {
-            yAxes: [{
-                type: 'category',
-                labels: ['2500', '2000', '1500', '1000', '500']
-            }]
-        }
-});
-
+// Form validation....incl alerts
 
 function validateForm() {
     let validateSearch = document.forms["search-form"]["search"].value;
@@ -72,3 +45,11 @@ function validateForm() {
         return true;
     }
   }
+
+let save = document.querySelector(".save");
+
+save.addEventListener('click', e => {
+  if (e.target.className === 'save') {
+    alert("Thank you, your settings have been saved");
+  }
+})

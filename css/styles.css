@@ -246,6 +246,18 @@ nav {
     /* border-left: 1px solid white; */
 }
 
+nav a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 2px solid transparent ;
+}
+
+nav a:hover {
+    border-left: 2px solid white ;
+}
+
 /* ------
 Dashboard and alert
 ------ */
@@ -333,6 +345,7 @@ li.traffic-nav-link:active {
 
 #traffic-chart {
     max-width: 100%;
+    height: 40vh;
 }
 
 /* ------
