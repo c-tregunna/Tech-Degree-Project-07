@@ -46,7 +46,7 @@ $( "span.close" ).click(function() { // hide each li when X is clicked
 //     }
 //   }
 
-// DIDNT WORK !!
+// DIDNT WORK !!0
 // function() {
 //   let validateSearch = document.forms["search-form"]["search"].value;
 //   let validateMessage = document.forms["search-form"]["user-message"].value;
@@ -61,17 +61,48 @@ $( "span.close" ).click(function() { // hide each li when X is clicked
 //   };
 // }};
 
-(function() {
 
-  var dialog = document.getElementById('form-alert');
-  document.getElementById('show').onclick = function() {
-      dialog.show();
-  };
-  document.getElementById('exit').onclick = function() {
-      dialog.close();
-  };
-})();
 
+// const send = document.querySelector('#show');
+// send.addEventListener('click', e => {
+//   e.preventDefault();
+//   (function() {
+
+//     var dialog = document.getElementById('form-alert');
+//     document.getElementById('show').onclick = function() {
+//         dialog.show();
+//     };
+//     document.getElementById('exit').onclick = function() {
+//         dialog.close();
+//     };
+//   })();
+// });
+
+const send = document.querySelector('#show');
+let validateSearch = document.forms["search-form"]["search"].value;
+let validateMessage = document.forms["search-form"]["user-message"].value;
+send.addEventListener('click', e => {
+  e.preventDefault();
+  (function() {
+    if( validateSearch === "" || validateMessage === "" ) {
+        var dialog = document.getElementById('form-alert');
+        document.getElementById('show').onclick = function() {
+            dialog.show();
+        };
+        document.getElementById('exit').onclick = function() {
+            dialog.close();
+        };
+    } else {
+        var dialog = document.getElementById('form-confirm');
+        document.getElementById('show').onclick = function() {
+            dialog.show();
+        };
+        document.getElementById('exit').onclick = function() {
+            dialog.close();
+        };
+    }
+  })();
+});
 
 
   // alert for settings - is this where local storage comes

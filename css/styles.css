@@ -547,7 +547,8 @@ button.save:hover {
     color: white;
 }
 
-#form-alert {
+#form-alert,
+#form-confirm {
     position: absolute;
     width: 400px;
     height: auto;
@@ -779,4 +780,3 @@ media-queries
     }
 
 }
-
