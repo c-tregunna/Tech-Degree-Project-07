@@ -48,7 +48,7 @@ $( "span.close" ).click(function() { // hide each li when X is clicked
 
 (function() {
 
-  var dialog = document.getElementById('window');
+  var dialog = document.getElementById('form-alert');
   document.getElementById('show').onclick = function() {
       dialog.show();
   };

@@ -547,7 +547,7 @@ button.save:hover {
     color: white;
 }
 
-#window {
+#form-alert {
     position: absolute;
     width: 400px;
     height: auto;
