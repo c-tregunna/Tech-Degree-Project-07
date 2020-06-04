@@ -1,6 +1,9 @@
+
+
 // Main traffic graph
 
 let trafficChart = document.getElementById('traffic-chart').getContext('2d');
+const chartNavLink = document.querySelector('.li.traffic-nav-link');
 
 Chart.defaults.global.animation.easing = 'easeInOutQuad',
 Chart.defaults.global.defaultFontFamily = 'Josefin Sans',
@@ -12,7 +15,7 @@ let lineChart = new Chart(trafficChart, {
         labels: ['16-22', '23-29', '30-5', '6-12', '13-19', '20-26', '27-3', '4-10', '11-17', '18-24', '25-31'],
         datasets: [{
             // label: 'Traffic Data',
-            backgroundColor: 'rgba(225, 239, 56, .6)',
+            backgroundColor: 'rgba(225, 239, 56, .8)',
             borderColor: 'rgb(70, 107, 0)',
             borderWidth: 2,
             data: [750, 1000, 1250, 1100, 1500, 1750, 1300, 1600, 1200, 2050, 1750],
@@ -53,6 +56,24 @@ $(".update-monthly").on("click", function() {
     lineChart.data.datasets[0].data = [900, 2000, 1600, 2200, 2400, 1800, 2550, 2800, 2300, 1900, 1430, 2110];
     lineChart.data.labels = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
     lineChart.update();
+});
+
+// chartNavLink.addEventListener('click', e => {
+//     if (e.target.tagName === 'li') { //targets the li in list
+//         e.target.classList.add('active'); // add the active class to li
+//     }
+// });
+
+// $("li.traffic-nav-link").click(function() {
+//     $(".traffic-nav-link").addClass("active");
+// });
+
+$('ul li.traffic-nav-link').on('click', function () {
+    var $this = $(this);
+    $(this).closest('li') // get current LI
+    .addClass('active')
+        .siblings() // get adjacent LIs
+    .removeClass('active');
 });
 
 // Main traffic chart end *********************
@@ -110,12 +131,3 @@ let doughnutChart = new Chart(mobileChart, {
 });
 // Mobile user chart end *********************
 
-// Create data for daily, weekly, monthly, hourly
-// Create labels for daily, weekly, monthly, hourly
-// on click of traffic nav
-// if hourly open hourly data show chart on click if li
-// if weekly open weekly data show chart on click if li
-// if daily open daily data show chart on click if li
-// if monthly open monthly data show chart on click if li
-// active or disabled added to li's on click
-// separate canvas for each graph
