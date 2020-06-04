@@ -211,7 +211,7 @@
 			<section class="message-and-settings">
 				<div class="message">
                     <h3>Message User</h3>
-                    <form name="search-form" onsubmit="return validateForm()">
+                    <form name="search-form" id="search-user-form">
                         <input type="text" class="user" placeholder="Search for user" name="search">
                         <textarea rows="6" placeholder="Message for user" name="user-message"></textarea>
                         <button class="message" id="show">Send</button>
@@ -219,12 +219,12 @@
                     <dialog id="form-alert">
                         <h3>Uh Oh! Something went wrong</h3>
                         <p>Please complete both sections of the form before submission</p>
-                        <button id="exit">Close</button>
+                        <button id="alert-exit">Close</button>
                     </dialog>
                     <dialog id="form-confirm">
                         <h3>Awesome</h3>
-                        <p>Your message has beens sent</p>
-                        <button id="exit">Close</button>
+                        <p>Your message has been sent</p>
+                        <button id="confirm-exit">Close</button>
                     </dialog>
                 </div>
 				<div class="settings" id="user-settings">
