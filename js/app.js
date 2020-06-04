@@ -46,6 +46,8 @@ function validateForm() {
     }
   }
 
+  // alert for settings - is this where local storage comes in???
+
 let save = document.querySelector(".save");
 
 save.addEventListener('click', e => {
@@ -53,6 +55,8 @@ save.addEventListener('click', e => {
     alert("Thank you, your settings have been saved");
   }
 })
+
+// Add active states to the navigation bar
 
 $('nav a').on('click', function () {
   var $this = $(this);

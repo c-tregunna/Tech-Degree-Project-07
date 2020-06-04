@@ -58,15 +58,7 @@ $(".update-monthly").on("click", function() {
     lineChart.update();
 });
 
-// chartNavLink.addEventListener('click', e => {
-//     if (e.target.tagName === 'li') { //targets the li in list
-//         e.target.classList.add('active'); // add the active class to li
-//     }
-// });
-
-// $("li.traffic-nav-link").click(function() {
-//     $(".traffic-nav-link").addClass("active");
-// });
+//  Add class to main graph li's
 
 $('ul li.traffic-nav-link').on('click', function () {
     var $this = $(this);
