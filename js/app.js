@@ -113,6 +113,7 @@ send.addEventListener('click', e => {
       $('#form-confirm').show();
       $('#confirm-exit').on('click', () => {
         $('#form-confirm').hide();
+        $('#search-user-form').trigger("reset");
       });
     }
 });
