@@ -46,8 +46,6 @@ $( "span.close" ).click(function() { // hide each li when X is clicked
 //     }
 //   }
 
-
-
 (function() {
 
   var dialog = document.getElementById('window');
