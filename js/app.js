@@ -61,11 +61,6 @@ $( "span.close" ).click(function() { // hide each li when X is clicked
 //   };
 // }};
 
-
-
-// const send = document.querySelector('#show');
-// send.addEventListener('click', e => {
-//   e.preventDefault();
 //   (function() {
 
 //     var dialog = document.getElementById('form-alert');
@@ -76,7 +71,7 @@ $( "span.close" ).click(function() { // hide each li when X is clicked
 //         dialog.close();
 //     };
 //   })();
-// });
+//
 
 const send = document.querySelector('#show');
 let validateSearch = document.forms["search-form"]["search"].value;
