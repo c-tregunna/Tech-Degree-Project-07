@@ -46,6 +46,21 @@ $( "span.close" ).click(function() { // hide each li when X is clicked
 //     }
 //   }
 
+// DIDNT WORK !!
+// function() {
+//   let validateSearch = document.forms["search-form"]["search"].value;
+//   let validateMessage = document.forms["search-form"]["user-message"].value;
+//   let dialog = document.getElementById('window');
+//   if (validateSearch === "" || validateMessage === "") {
+
+//   document.getElementById('show').onclick = function() {
+//       dialog.show();
+//   };
+//   document.getElementById('exit').onclick = function() {
+//       dialog.close();
+//   };
+// }};
+
 (function() {
 
   var dialog = document.getElementById('form-alert');
