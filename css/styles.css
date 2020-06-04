@@ -353,11 +353,6 @@ li.traffic-nav-link:active {
     margin-top: 20px;
 }
 
-.disabled {
-    visibility: hidden;
-}
-
-
 /* ------
 graphs - Half
 ------ */
@@ -732,7 +727,7 @@ media-queries
     }
     #traffic-chart {
         width: 90vw!important;
-        height: 400px!important;
+        height: 500px!important;
     }
     .full-chart-container {
         width: 90vw;

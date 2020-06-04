@@ -29,6 +29,32 @@ let lineChart = new Chart(trafficChart, {
     }
 });
 
+// Main traffic graph options
+
+$(".update-hourly").on("click", function() {
+    lineChart.data.datasets[0].data = [300, 400, 500, 600, 770, 560, 380, 470, 320];
+    lineChart.data.labels = [09.00, 10.00, 11.00, 12.00, 13.00, 14.00, 15.00, 16.00, 17.00];
+    lineChart.update();
+});
+
+$(".update-daily").on("click", function() {
+    lineChart.data.datasets[0].data = [250, 400, 650, 490, 770, 610, 650];
+    lineChart.data.labels = ['Mon', 'Tues', 'Weds', 'Thurs', 'Fri', 'Sat', 'Sun'];
+    lineChart.update();
+});
+
+$(".update-weekly").on("click", function() {
+    lineChart.data.datasets[0].data = [750, 1000, 1250, 1100, 1500, 1750, 1300, 1600, 1200, 2050, 1750];
+    lineChart.data.labels = ['16-22', '23-29', '30-5', '6-12', '13-19', '20-26', '27-3', '4-10', '11-17', '18-24', '25-31'];
+    lineChart.update();
+});
+
+$(".update-monthly").on("click", function() {
+    lineChart.data.datasets[0].data = [900, 2000, 1600, 2200, 2400, 1800, 2550, 2800, 2300, 1900, 1430, 2110];
+    lineChart.data.labels = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'June', 'July', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    lineChart.update();
+});
+
 // Main traffic chart end *********************
 
 // Daily traffic graph
