@@ -1,6 +1,7 @@
 
-
+// --------------------------------
 // Main traffic graph
+// --------------------------------
 
 let trafficChart = document.getElementById('traffic-chart').getContext('2d');
 const chartNavLink = document.querySelector('.li.traffic-nav-link');
@@ -32,7 +33,9 @@ let lineChart = new Chart(trafficChart, {
     }
 });
 
+// --------------------------------
 // Main traffic graph options
+// --------------------------------
 
 $(".update-hourly").on("click", function() {
     lineChart.data.datasets[0].data = [300, 400, 500, 600, 770, 560, 380, 470, 320];
@@ -58,7 +61,9 @@ $(".update-monthly").on("click", function() {
     lineChart.update();
 });
 
+// --------------------------------
 //  Add class to main graph li's
+// --------------------------------
 
 $('ul li.traffic-nav-link').on('click', function () {
     var $this = $(this);
@@ -68,9 +73,15 @@ $('ul li.traffic-nav-link').on('click', function () {
     .removeClass('active');
 });
 
-// Main traffic chart end *********************
 
+// Main traffic chart end *********************
+// --------------------------------
+
+
+// --------------------------------
 // Daily traffic graph
+// --------------------------------
+
 let dailyChart = document.getElementById('daily-chart').getContext('2d');
 
 Chart.defaults.global.defaultFontFamily = 'Josefin Sans',
@@ -95,8 +106,12 @@ let barChart = new Chart(dailyChart, {
 });
 
 // Daily traffic chart end *********************
+// --------------------------------
 
+// --------------------------------
 // Mobile users graph
+// --------------------------------
+
 let mobileChart = document.getElementById('mobile-chart').getContext('2d');
 
 Chart.defaults.global.defaultFontFamily = 'Josefin Sans',
@@ -121,8 +136,9 @@ let doughnutChart = new Chart(mobileChart, {
         }
     }
 });
-// Mobile user chart end *********************
 
+// Mobile user chart end *********************
+// --------------------------------
 
 
 

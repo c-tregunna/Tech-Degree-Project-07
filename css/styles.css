@@ -41,6 +41,10 @@ main {
     overflow: auto;
 }
 
+/* ------
+paragraphs
+------ */
+
 p.social-name {
     font-size: 1.25em;
     color: #466B00;
@@ -74,7 +78,7 @@ p.time-frame {
 }
 
 
-  /* ------
+/* ------
 Headings
 ------ */
 
