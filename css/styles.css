@@ -297,16 +297,22 @@ input.search {
     width: 90%;
     margin: 20px auto;
     border-radius: 5px;
-    background-color: rgb(212, 230, 20);
+    background-color: rgba(212, 230, 20, .8);
     color: black;
     padding: 15px 10px;
     border: 1px solid #666;
+    box-shadow: 0 2px 4px #666;
+}
+
+#alert:hover {
+    background-color: rgb(212, 230, 20);
 }
 
 .alert-banner {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
 }
 
 p.alert-banner-close {
@@ -316,7 +322,7 @@ p.alert-banner-close {
 }
 
 /* ------
-graphs - Main
+graphs
 ------ */
 .full-size-header {
     width: 100%;
@@ -360,10 +366,6 @@ li.traffic-nav-link:hover {
     max-width: 100%;
     margin-top: 20px;
 }
-
-/* ------
-graphs - Half
------- */
 
 
 /* ------
@@ -543,6 +545,29 @@ button.message:hover,
 button.save:hover {
     background-color: #466B00;
     color: white;
+}
+
+#window {
+    position: absolute;
+    width: 400px;
+    height: auto;
+    top: 200px;
+    margin: 0 auto;
+    z-index: 100000;
+    background-color: rgb(225, 239, 56);
+    border: 1px solid #666;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+#exit {
+    margin-top: 20px;
+    background-color: #466B00;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 2px;
 }
 
 /* ------

@@ -214,8 +214,13 @@
                     <form name="search-form" onsubmit="return validateForm()">
                         <input type="text" class="user" placeholder="Search for user" name="search">
                         <textarea rows="6" placeholder="Message for user" name="user-message"></textarea>
-                        <button class="message">Send</button>
+                        <button class="message" id="show">Send</button>
                     </form>
+                    <dialog id="window">
+                        <h3>Uh Oh! Something went wrong</h3>
+                        <p>Please complete both sections of the form before submission</p>
+                        <button id="exit">Close</button>
+                       </dialog>
                 </div>
 				<div class="settings" id="user-settings">
                     <h3>Settings</h3>

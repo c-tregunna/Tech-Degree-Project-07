@@ -30,23 +30,38 @@ $( "span.close" ).click(function() { // hide each li when X is clicked
 
 // Form validation....incl alerts
 
-function validateForm() {
-    let validateSearch = document.forms["search-form"]["search"].value;
-    let validateMessage = document.forms["search-form"]["user-message"].value;
+// function validateForm() {
+//     let validateSearch = document.forms["search-form"]["search"].value;
+//     let validateMessage = document.forms["search-form"]["user-message"].value;
 
-    if (validateSearch === "") {
-      alert("Search for user field must be complete. Please try again");
-      return false;
-    } if (validateMessage === "") {
-        alert("Message for user field must be complete. Please try again");
-      return false;
-    }  else {
-        alert("Thank you. Your message has been sent to the user");
-        return true;
-    }
-  }
+//     if (validateSearch === "") {
+//       alert("Search for user field must be complete. Please try again");
+//       return false;
+//     } if (validateMessage === "") {
+//         alert("Message for user field must be complete. Please try again");
+//       return false;
+//     }  else {
+//         alert("Thank you. Your message has been sent to the user");
+//         return true;
+//     }
+//   }
 
-  // alert for settings - is this where local storage comes in???
+
+
+(function() {
+
+  var dialog = document.getElementById('window');
+  document.getElementById('show').onclick = function() {
+      dialog.show();
+  };
+  document.getElementById('exit').onclick = function() {
+      dialog.close();
+  };
+})();
+
+
+
+  // alert for settings - is this where local storage comes
 
 let save = document.querySelector(".save");
 
