@@ -35,10 +35,10 @@ function validateForm() {
     let validateMessage = document.forms["search-form"]["user-message"].value;
 
     if (validateSearch === "") {
-      alert("Search for user name must be complete. Please try again");
+      alert("Search for user field must be complete. Please try again");
       return false;
     } if (validateMessage === "") {
-        alert("Message for user must be complete. Please try again");
+        alert("Message for user field must be complete. Please try again");
       return false;
     }  else {
         alert("Thank you. Your message has been sent to the user");

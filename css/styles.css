@@ -593,7 +593,7 @@ Toggle buttons
     justify-content: space-between;
     align-items: center;
     margin-bottom: 30px;
-    padding-right: 20px;
+    width: 70%;
 }
 
 .email-notif {
