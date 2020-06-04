@@ -53,3 +53,11 @@ save.addEventListener('click', e => {
     alert("Thank you, your settings have been saved");
   }
 })
+
+$('nav a').on('click', function () {
+  var $this = $(this);
+  $(this).closest('nav a') // get current LI
+  .addClass('active-nav')
+      .siblings() // get adjacent LIs
+  .removeClass('active-nav');
+});
