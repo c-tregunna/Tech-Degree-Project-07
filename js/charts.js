@@ -38,7 +38,7 @@ let lineChart = new Chart(trafficChart, {
 // --------------------------------
 
 $(".update-hourly").on("click", function() {
-    lineChart.data.datasets[0].data = [300, 400, 500, 600, 770, 560, 380, 470, 320];
+    lineChart.data.datasets[0].data = [300, 570, 500, 600, 770, 560, 380, 470, 320];
     lineChart.data.labels = [09.00, 10.00, 11.00, 12.00, 13.00, 14.00, 15.00, 16.00, 17.00];
     lineChart.data.datasets[0].backgroundColor ='rgba(70, 107, 0, .8)';
     lineChart.update();
