@@ -726,7 +726,7 @@ media-queries
         justify-content: flex-start;
     }
     .nav-icons {
-        margin: 40px 20px;
+        margin: 20px;
     }
     nav a:hover {
         border-left: 2px solid white ;
@@ -770,10 +770,12 @@ media-queries
     }
     #traffic-chart {
         width: 90vw!important;
-        height: 500px!important;
+        height: 450px!important;
     }
     .full-chart-container {
-        width: 90vw;
+        width: 80vw;
+        margin: auto;
+        max-width: 1000px;
     }
     .chart-1 {
         border-bottom: none;
