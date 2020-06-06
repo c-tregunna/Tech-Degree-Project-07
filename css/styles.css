@@ -614,9 +614,9 @@ button.cancel:hover {
 }
 
 
-/* ------
+/* -------
 Toggle buttons
------- */
+------- */
 .toggle-contain {
     display: flex;
     flex-direction: column;
