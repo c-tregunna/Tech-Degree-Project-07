@@ -629,7 +629,7 @@ Toggle buttons
     justify-content: space-between;
     align-items: center;
     margin-bottom: 30px;
-    width: 80%;
+    width: 100%;
 }
 
 .email-notif {
@@ -785,5 +785,8 @@ media-queries
     .chart-2 {
         width: 50%;
     }
-
+    .email-notif,
+    .public-profile {
+        width: 70%;
+    }
 }
