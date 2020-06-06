@@ -554,7 +554,7 @@ button.save:hover {
 #form-alert,
 #form-confirm {
     position: absolute;
-    width: 400px;
+    width: 300px;
     height: auto;
     top: 200px;
     margin: 0 auto;
