@@ -87,8 +87,7 @@ save.addEventListener('click', e => {
     localStorage.setItem('email-pref', 'checked')
   } if (localStorage.length === 2) {
       localStorage.setItem('profile-pref', 'checked')
-  }
-  if (e.target.className === 'save') {
+  } if (e.target.className === 'save') {
     alert("Thank you, your settings have been saved");
   }
 })
