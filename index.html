@@ -233,7 +233,7 @@
                         <div class="email-notif">
                             <p>Send Email Notifications</p>
                             <label class="switch-light switch-ios" onclick="">
-                                <input type="checkbox">
+                                <input type="checkbox" id="email-pref">
                                 <span>
                                     <span>Off</span>
                                     <span>On</span>
@@ -245,7 +245,7 @@
                         <div class="public-profile">
                             <p>Set Profile to Public</p>
                             <label class="switch-light switch-ios" onclick="">
-                                <input type="checkbox">
+                                <input type="checkbox" id="profile-pref">
                                 <span>
                                     <span>Off</span>
                                     <span>On</span>
@@ -254,8 +254,8 @@
                             </label>
                         </div>
                     </div>
-                    <select id="county" name="user_county" class="select-county">
-                        <option>Select Timzone</option>
+                    <select id="time-zone" name="user_time_zone">
+                          <option value="" disabled>Select Timezone</option>
                           <option value="gmt">GMT - Greenwich Mean Time</option>
                           <option value="pst">PST - Pacific Standard Time</option>
                           <option value="cst">CST - Central Standard Time</option>

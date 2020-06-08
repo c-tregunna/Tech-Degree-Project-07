@@ -75,10 +75,33 @@ send.addEventListener('click', e => {
 
 let save = document.querySelector(".save");
 
+let emailPref = document.getElementById("email-pref")
+let profilePref = document.getElementById("profile-pref")
+let timeZone = document.getElementById("time-zone") // to save time zone pref
+
+timeZone.value = localStorage.getItem('time-zone')
+
 save.addEventListener('click', e => {
+  localStorage.setItem('time-zone', timeZone.value);
+  if (localStorage.length === 1) {
+    localStorage.setItem('email-pref', 'checked')
+  } if (localStorage.length === 2) {
+      localStorage.setItem('profile-pref', 'checked')
+  }
   if (e.target.className === 'save') {
     alert("Thank you, your settings have been saved");
   }
+})
+
+// When you click cancel local storage is cleared
+
+let cancel = document.querySelector(".cancel")
+
+cancel.addEventListener('click', e => {
+if (e.target.className === 'cancel') {
+  alert("Your settings have been removed");
+  localStorage.clear();
+}
 })
 
 
