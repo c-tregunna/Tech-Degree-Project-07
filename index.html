@@ -211,8 +211,10 @@
 			<section class="message-and-settings">
 				<div class="message">
                     <h3>Message User</h3>
-                    <form name="search-form" id="search-user-form" onsubmit="return validateForm()">
-                        <input type="text" class="user" placeholder="Search for user" name="search" id="names">
+                    <form name="search-form" id="search-user-form" onsubmit="return validateForm()" autocomplete="off">
+                        <div class="autocomplete">
+                            <input type="text" class="user" placeholder="Search for user" name="search" id="names">
+                        </div>
                         <textarea rows="6" placeholder="Message for user" name="user-message"></textarea>
                         <button class="message" id="show">Send</button>
                     </form>

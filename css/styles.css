@@ -154,12 +154,18 @@ ul.notifications li {
     justify-content: space-between;
     align-items: center;
     padding: 8px 20px;
-    border: 1px solid black;
+    border: 1px solid #bbb;
     background-color: rgb(212, 230, 20);
     color:#444;
-    border-radius: 5px;
+    border-radius: 2px;
     font-size: .7em
 }
+
+ul.notifications li:first-child,
+ul.notifications li:nth-child(2) {
+    border-bottom: none;
+}
+
 
 ul.notifications li:nth-child(2) {
     background-color: rgb(212, 250, 20);
@@ -551,7 +557,40 @@ button.save:hover {
     color: white;
 }
 
-#form-alert,
+/* Form search autocomplete */
+
+.autocomplete {
+    /*the container must be positioned relative:*/
+    position: relative;
+    display: inline-block;
+    width: 100%;
+  }
+
+  .autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    /*position the autocomplete items to be the same width as the container:*/
+    top: 100%;
+    left: 0;
+    right: 0;
+  }
+  .autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    border-bottom: 1px solid #d4d4d4;
+    text-align: left;
+  }
+
+  .autocomplete-items div:nth-child(odd) {
+      background-color: rgb(225, 239, 56);
+  }
+
+
+/* #form-alert,
 #form-confirm {
     position: absolute;
     width: 300px;
@@ -574,7 +613,7 @@ button.save:hover {
     border: none;
     padding: 10px;
     border-radius: 2px;
-}
+} */
 
 /* ------
 Settings
