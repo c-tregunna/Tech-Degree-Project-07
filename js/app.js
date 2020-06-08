@@ -79,20 +79,21 @@ let emailPref = document.getElementById("email-pref")
 let profilePref = document.getElementById("profile-pref")
 let timeZone = document.getElementById("time-zone") // to save time zone pref
 
-timeZone.value = localStorage.getItem('time-zone')
-const profileSettings = localStorage.getItem('profile-pref');
-if (profileSettings && profileSettings === 'checked') {
-  profilePref.checked = true;
-} else {
-  profilePref.checked = false;
-}
+timeZone.value = localStorage.getItem('time-zone') // Select time zone value to save
 
 const emailSettings = localStorage.getItem('email-pref');
 
-if (emailSettings && emailSettings === 'checked') {
-  emailPref.checked = true;
+if (emailSettings && emailSettings === 'checked') { // check if email check box is checked
+  emailPref.checked = true; // if it is stay true even on refresh
 } else {
   emailPref.checked = false;
+}
+
+const profileSettings = localStorage.getItem('profile-pref');
+if (profileSettings && profileSettings === 'checked') { // check if profile check box is checked
+  profilePref.checked = true; // if it is stay true even on refresh
+} else {
+  profilePref.checked = false;
 }
 
 save.addEventListener('click', e => {
