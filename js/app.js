@@ -80,6 +80,20 @@ let profilePref = document.getElementById("profile-pref")
 let timeZone = document.getElementById("time-zone") // to save time zone pref
 
 timeZone.value = localStorage.getItem('time-zone')
+const profileSettings = localStorage.getItem('profile-pref');
+if (profileSettings && profileSettings === 'checked') {
+  profilePref.checked = true;
+} else {
+  profilePref.checked = false;
+}
+
+const emailSettings = localStorage.getItem('email-pref');
+
+if (emailSettings && emailSettings === 'checked') {
+  emailPref.checked = true;
+} else {
+  emailPref.checked = false;
+}
 
 save.addEventListener('click', e => {
   localStorage.setItem('time-zone', timeZone.value)
@@ -87,28 +101,16 @@ save.addEventListener('click', e => {
   if (emailPref.checked) {
   localStorage.setItem('email-pref', 'checked');
   } else {
-    localStorage.setItem('email-pref', 'not checked');
+  localStorage.setItem('email-pref', 'not checked');
   }
-
-  const emailSettings = localStorage.getItem('email-pref');
-  const profileSettings = localStorage.getItem('profile-pref');
-  if (emailSettings && emailSettings === 'checked') {
-    emailPref.checked = true;
-  } else {
-    emailPref.checked = false;
-  }
-  if (profileSettings && profileSettings === 'checked') {
-    profilePref.checked = true;
-  } else {
-    profilePref.checked = false;
-  }
-
 
   if (profilePref.checked) {
-  localStorage.setItem('profile-pref', 'checked');
-  } else {
+    localStorage.setItem('profile-pref', 'checked');
+    } else {
     localStorage.setItem('profile-pref', 'not checked');
-  }
+    }
+
+
 
   if (e.target.className === 'save') {
     alert("Thank you, your settings have been saved");
@@ -150,14 +152,6 @@ if (e.target.className === 'cancel') {
 //         return true;
 //     }
 //   }
-
-const emailSettings = localStorage.getItem('email-pref');
-const profileSettings = localStorage.getItem('profile-pref');
-if (emailSettings && emailSettings === 'checked') {
-  emailPref.checked = true;
-} else {
-  emailPref.checked = false;
-}
 
 // if (emailSettings && emailSettings === 'checked') {
 //   emailPref.checked = true;
