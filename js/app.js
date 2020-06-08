@@ -85,19 +85,37 @@ save.addEventListener('click', e => {
   localStorage.setItem('time-zone', timeZone.value)
 
   if (emailPref.checked) {
-  localStorage.setItem('email-pref', 'checked')
+  localStorage.setItem('email-pref', 'checked');
   } else {
-    localStorage.setItem('email-pref', 'not checked')
+    localStorage.setItem('email-pref', 'not checked');
   }
+
+  const emailSettings = localStorage.getItem('email-pref');
+  const profileSettings = localStorage.getItem('profile-pref');
+  if (emailSettings && emailSettings === 'checked') {
+    emailPref.checked = true;
+  } else {
+    emailPref.checked = false;
+  }
+  if (profileSettings && profileSettings === 'checked') {
+    profilePref.checked = true;
+  } else {
+    profilePref.checked = false;
+  }
+
+
   if (profilePref.checked) {
-  localStorage.setItem('profile-pref', 'checked')
+  localStorage.setItem('profile-pref', 'checked');
   } else {
-    localStorage.setItem('profile-pref', 'not checked')
+    localStorage.setItem('profile-pref', 'not checked');
   }
+
   if (e.target.className === 'save') {
     alert("Thank you, your settings have been saved");
   }
 })
+
+
 
 // When you click cancel local storage is cleared
 
@@ -132,3 +150,17 @@ if (e.target.className === 'cancel') {
 //         return true;
 //     }
 //   }
+
+const emailSettings = localStorage.getItem('email-pref');
+const profileSettings = localStorage.getItem('profile-pref');
+if (emailSettings && emailSettings === 'checked') {
+  emailPref.checked = true;
+} else {
+  emailPref.checked = false;
+}
+
+// if (emailSettings && emailSettings === 'checked') {
+//   emailPref.checked = true;
+// } else {
+//   emailPref.checked = false;
+// }
