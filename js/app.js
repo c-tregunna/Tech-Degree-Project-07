@@ -83,8 +83,17 @@ timeZone.value = localStorage.getItem('time-zone')
 
 save.addEventListener('click', e => {
   localStorage.setItem('time-zone', timeZone.value)
+
+  if (emailPref.checked) {
   localStorage.setItem('email-pref', 'checked')
+  } else {
+    localStorage.setItem('email-pref', 'not checked')
+  }
+  if (profilePref.checked) {
   localStorage.setItem('profile-pref', 'checked')
+  } else {
+    localStorage.setItem('profile-pref', 'not checked')
+  }
   if (e.target.className === 'save') {
     alert("Thank you, your settings have been saved");
   }
