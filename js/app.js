@@ -50,24 +50,22 @@ $('nav a').on('click', function () {
 // Form validation
 // --------------------------------
 
-const send = document.querySelector('#show');
-send.addEventListener('click', e => {
-  let validateSearch = $('input[name="search"]').val();
-  let validateMessage = $('textarea[name="user-message"]').val();
-  e.preventDefault();
+
+// Form validation....incl alerts original code
+
+function validateForm() {
+    let validateSearch = document.forms["search-form"]["search"].value;
+    let validateMessage = document.forms["search-form"]["user-message"].value;
+
     if (validateSearch === "" || validateMessage === "") {
-      $('#form-alert').show(); // show the alert that form must be complete
-      $('#alert-exit').on('click', () => {
-        $('#form-alert').hide();
-      });
+      alert("Both form fields must be complete. Please try again");
+      return false;
     } else {
-      $('#form-confirm').show(); // show the alert that form has been submitted
-      $('#confirm-exit').on('click', () => {
-        $('#form-confirm').hide();
-        $('#search-user-form').trigger("reset"); // resets input and text area
-      });
+        alert("Thank you. Your message has been sent to the user");
+        return true;
     }
-});
+  }
+
 
 // --------------------------------
 // alert for settings - is this where local storage comes
@@ -110,9 +108,6 @@ save.addEventListener('click', e => {
     } else {
     localStorage.setItem('profile-pref', 'not checked');
     }
-
-
-
   if (e.target.className === 'save') {
     alert("Thank you, your settings have been saved");
   }
@@ -136,26 +131,23 @@ if (e.target.className === 'cancel') {
 
 
 
-// Form validation....incl alerts original code
+// Dialog box, decided not to use as may not always show in all browsers
 
-// function validateForm() {
-//     let validateSearch = document.forms["search-form"]["search"].value;
-//     let validateMessage = document.forms["search-form"]["user-message"].value;
-
-//     if (validateSearch === "") {
-//       alert("Search for user field must be complete. Please try again");
-//       return false;
-//     } if (validateMessage === "") {
-//         alert("Message for user field must be complete. Please try again");
-//       return false;
-//     }  else {
-//         alert("Thank you. Your message has been sent to the user");
-//         return true;
+// const send = document.querySelector('#show');
+// send.addEventListener('click', e => {
+//   let validateSearch = $('input[name="search"]').val();
+//   let validateMessage = $('textarea[name="user-message"]').val();
+//   e.preventDefault();
+//     if (validateSearch === "" || validateMessage === "") {
+//       $('#form-alert').show(); // show the alert that form must be complete
+//       $('#alert-exit').on('click', () => {
+//         $('#form-alert').hide();
+//       });
+//     } else {
+//       $('#form-confirm').show(); // show the alert that form has been submitted
+//       $('#confirm-exit').on('click', () => {
+//         $('#form-confirm').hide();
+//         $('#search-user-form').trigger("reset"); // resets input and text area
+//       });
 //     }
-//   }
-
-// if (emailSettings && emailSettings === 'checked') {
-//   emailPref.checked = true;
-// } else {
-//   emailPref.checked = false;
-// }
+// });
