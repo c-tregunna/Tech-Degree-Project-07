@@ -182,7 +182,7 @@ ul.notifications li span {
 
 
  /* ------
-Bell animation
+Bell animation -  the rubic states to use a transition, however I chose to use an animation but it does have a time frame stated in the animation
 ------ */
 
 @keyframes ring {
@@ -215,7 +215,8 @@ Bell animation
 
 .bell-icon:hover {
     /* transform: rotate(30deg) scale(1.1); */
-    animation: ring 1s ease-out backwards;
+    animation: ring 1s ease-out backwards; /* inclued time frame for animation */
+
 }
 
 .dot {

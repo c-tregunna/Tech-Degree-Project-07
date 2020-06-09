@@ -47,7 +47,7 @@ $('nav a').on('click', function () {
 });
 
 // --------------------------------
-// Autocomplete
+// Autocomplete function for search bar
 // --------------------------------
 
 let memberNames = [
